@@ -1,5 +1,5 @@
 def tanya(pertanyaan):
-    """Mengembalikan True jika jawaban 'ya', False jika 'tidak'."""
+    """True jika jawaban 'ya', False jika 'tidak'."""
     jawab = input(f"{pertanyaan} (ya/tidak): ").strip().lower()
     if jawab == "ya":
         return True
@@ -11,7 +11,7 @@ def tanya(pertanyaan):
 
 
 def pilih(pertanyaan, pilihan):
-    """Menampilkan daftar pilihan dan mengembalikan pilihan yang dipilih."""
+    """Menampilkan daftar pilihan."""
     print(pertanyaan)
     for i, opsi in enumerate(pilihan, start=1):
         print(f"  {i}. {opsi}")
